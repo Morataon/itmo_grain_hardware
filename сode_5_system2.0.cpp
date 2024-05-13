@@ -49,7 +49,7 @@ void loop()
    curent_button[i] = debounce(last_button[i], Button[i]); 
    if (!last_button[i] && curent_button[i] && !flag) 
    { 
-    mode[i] = !mode[i]; // переключение режима кнопки 
+    mode[i] = !mode[i]; // переключение режима кнопок 
     Serial.print(String(i + 1)); 
   
     flag= true; 
